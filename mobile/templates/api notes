@@ -1,0 +1,13 @@
+#mobile/Brands
+
+    #get----> list all brands
+    # post----> create a new brand
+
+# mobile/delete:
+
+    #get---> delete brand with id
+
+#mobile/update:
+
+    #get----> fetch the corresponding brand
+    # post---> update that brand

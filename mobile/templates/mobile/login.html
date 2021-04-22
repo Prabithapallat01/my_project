@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{%extends 'mobile/base.html'%}
+
+{%block body_block%}
+
+
+<h1 id="head">Please Login Here!!!!!!!</h1>
+<div class="container1">
+
+    <form action=""method="post">
+        {%csrf_token%}
+        <div id="opn">
+            <input type="text" class="form-control type"  name="uname" placeholder="username" ><br>
+            <input type="password" class="form-control type" name="pwd" placeholder="password"><br>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" id="btn1" >Login</button>
+        </div>
+        <a href="{%url 'userregistration' %}">Are you new user?</a>
+    </form>
+
+</div>
+
+
+{% endblock %}
+

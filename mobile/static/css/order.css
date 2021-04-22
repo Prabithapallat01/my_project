@@ -1,0 +1,16 @@
+.box{
+
+    height:300px;
+    width:400px;
+    margin:80px auto;
+    color:#FFFFFF;
+}
+#btn{
+    margin: 50px 0 0;
+    height: 35px;
+    width: 200px;
+    background-color: rgb(7, 17, 153);
+    margin-inline-start: 100px;
+    color: white;
+    font-weight: 700;
+}

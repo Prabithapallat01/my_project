@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!-- CSS only -->
+{%extends 'mobile/base.html'%}
+
+{%block body_block%}
+
+<div class="container1">
+    <div class="row">
+        <div class="col-6">
+<div class="box">
+
+<form action="" method="post">
+    {%csrf_token%}
+    <table class="ta" >
+        {{form.as_table}}
+
+    </table>
+    <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary " style="width:100px">Create</button>
+        </div>
+</form>
+</div>
+</div>
+        <div class="col-6">
+<div>
+<table class="table table-success table-striped " style="margin-top:200px; margin-left:2%;">
+    <tr class="table-dark">
+        <td class="table-dark">BRAND NAME</td>
+         <td class="table-dark">DELETE</td>
+         <td class="table-dark">UPDATE</td>
+    </tr>
+    {%for brand in brands%}
+
+    <tr class="table-dark">
+        <td class="table-dark">{{brand.brand_name}}</td>
+        <td><a href="{%url 'delete' brand.id%}">delete</a></td>
+        <td><a href="{%url 'update' brand.id%}">update</a></td>
+    </tr>
+    {% endfor%}
+</table>
+</div>
+</div>
+
+
+</div>
+</div>
+{% endblock %}

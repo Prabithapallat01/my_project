@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%extends 'mobile/base.html'%}
+
+{%block body_block%}
+
+
+<div class="container">
+    <div class="col-4">
+         {%if mobile.img%}
+        <div><img src="{{mobile.img.url}}" alt=""height="100px" width="100px"></div>
+       {%endif%}
+        <h2 id="h11">{{mobile.mobile_name}}</h2>
+
+        <h2>{{mobile.price}}</h2>
+        <a href="{%url 'order'%}">PurcharseProduct</a>
+    </div>
+</div>
+
+
+
+{% endblock %}
